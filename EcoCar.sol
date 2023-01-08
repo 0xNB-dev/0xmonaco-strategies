@@ -79,7 +79,7 @@ contract EcoCar is ICar {
             }
 
          
-
+                //gain the speed of the fastest car 
                if((ourCar.speed < allCars[0].speed || ourCar.speed < allCars[2].speed) && ourCar.balance > monaco.getAccelerateCost(allCars[0].speed > allCars[2].speed? allCars[0].speed-ourCar.speed : allCars[2].speed- ourCar.speed)){
                 ourCar.balance -= uint24(monaco.buyAcceleration(allCars[0].speed > allCars[2].speed? allCars[0].speed-ourCar.speed : allCars[2].speed- ourCar.speed));
             }
