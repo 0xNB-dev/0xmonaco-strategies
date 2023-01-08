@@ -3,7 +3,7 @@ pragma solidity 0.8.17;
 
 import "./../../interfaces/ICar.sol";
 
-contract TestShellandShield is ICar {
+contract TestShellAndShield is ICar {
     function takeYourTurn(
         Monaco monaco,
         Monaco.CarData[] calldata allCars,
@@ -28,6 +28,6 @@ contract TestShellandShield is ICar {
     }
 
     function sayMyName() external pure returns (string memory) {
-        return "TestShellandShield";
+        return "TestShellAndShield";
     }
 }
